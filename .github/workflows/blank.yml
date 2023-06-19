@@ -53,6 +53,7 @@ jobs:
         run: |
           curl -o S3-Website-main.zip -L https://github.com/AWS-First-Cloud-Journey/S3-Website/archive/refs/heads/main.zip 
           unzip S3-Website-main.zip
+          pwd
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1      
