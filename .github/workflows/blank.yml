@@ -40,7 +40,7 @@ jobs:
       
       defaults:
         run:
-          shell: bash
+#           shell: bash
           working-directory: 000057-StartingWithAmazonS3
         
       needs: build
