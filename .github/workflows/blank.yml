@@ -37,6 +37,12 @@ jobs:
           echo test, and deploy your project.
   deployS3:
       runs-on: ubuntu-latest
+      
+      defaults:
+        run:
+          shell: bash
+          working-directory: 000057-StartingWithAmazonS3
+        
       needs: build
       steps:
       - name: Download all workflow run artifacts
